@@ -117,7 +117,8 @@ async function makeFilePublic(fileId) {
 }
 
 async function processImage() {
-  const imageUrl = "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg"; // Replace with the URL of the image you want to download
+  const imageUrl =
+    "https://www.seragamharmas.com/wp-content/uploads/2020/11/KK-012-Kemeja-Abu-01.jpg"; // Replace with the URL of the image you want to download
   const parentId = "1NuP83rBhbIgL_EOXQRCnYfV392Vuj_mw"; // Replace with the ID of the folder you want to upload to
   const downloadPath = "./img/temporary-image.jpeg";
   const watermarkPath = "./logo/logo-vido-black.png";
@@ -134,7 +135,7 @@ const outputImagePath = `./img/${datePrefix}-${uniqueId}.jpeg`;
 // await watermarkImage(downloadPath, watermarkPath, outputImagePath);
 
 // Download the image from the URL
-await downloadImage(imageUrl, outputImagePath);
+// await downloadImage(imageUrl, outputImagePath);
 // Watermark the image
 await watermarkImage(outputImagePath, watermarkPath, outputImagePath);
 
